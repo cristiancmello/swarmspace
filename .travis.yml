@@ -11,5 +11,6 @@ before_install:
   - sudo apt-get -y install docker-ce
   - docker version
   - chmod +x travis-build.sh
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script: ./travis-build.sh
