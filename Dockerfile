@@ -47,4 +47,4 @@ RUN apt-get update && \
     && apt-get clean
 
 # Source the bash
-RUN . ~/.bashrc
+# RUN . ~/.bashrc
